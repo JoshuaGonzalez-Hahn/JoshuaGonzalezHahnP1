@@ -2,6 +2,14 @@
 that makes an element behave like a popover — a small, temporary UI box that can be shown or hidden on demand.
 I'm using it in a way for user engagement. They have to click the button to see what is my go-to game. Im using it at 
 first instance of a button-->
+<!-- This page uses the <tbody> HTML element. It encapsulates a set of table rows (<tr> elements), indicating 
+     that they comprise the body of a table's main data. I'm using it to have a table hold the playstation consoles 
+     and the year they were released. <tbody> is found at the first instance of <table>.-->
+<!-- Along with tbody im using the scope attribute. Scope helps screen readers understand the relationship 
+     between headers and data. It improves accessibility (ARIA). Im using it to help screen readers understand the 
+     relationships of the table. Screen readers will now announce “Row: Playstation, Initial Year Released: 1994” instead of 
+     just reading cells out of context. Scope is found at the <table> section.  -->
+
 <!DOCTYPE html>
 <html lang="en" class="videogamePage">
   <head>
@@ -20,14 +28,14 @@ first instance of a button-->
           </li>
           <li>
             <a href="anime.html" title="anime page for my favorite animes"
-              >My Favorite Anime
+              >Favorite Anime
             </a>
           </li>
           <li>
             <a
               href="superheroes.html"
               title="page about my favorite superheroes"
-              >My Favorite Superhero</a
+              >Favorite Superhero</a
             >
           </li>
         </ul>
@@ -76,8 +84,8 @@ first instance of a button-->
           have made me go through every emotion possible, while other have made
           me question why did I even buy this game. Many games hold a special
           place in my heart and deserve to be my favorite game. However, putting
-          nostalgia to side, my favorite game would have to be Marvel's Spider
-          Man!
+          nostalgia to the side, my favorite game would have to be Marvel's
+          Spider Man!
         </p>
       </section>
       <section>
@@ -110,10 +118,51 @@ first instance of a button-->
           place in my heart. As you may have guessed by my favorite game, where
           I choose to play is on PlayStation!
         </p>
+        <table>
+          <caption>
+            PlayStation Consoles And Their Initial Release Year
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Model</th>
+              <th scope="col">Initial Release Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">PlayStation (PS1)</th>
+              <td>1994</td>
+            </tr>
+            <tr>
+              <th scope="row">PlayStation 2 (PS2)</th>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <th scope="row">PlayStation Portable (PSP)</th>
+              <td>2004</td>
+            </tr>
+            <tr>
+              <th scope="row">PlayStation 3 (PS3)</th>
+              <td>2006</td>
+            </tr>
+            <tr>
+              <th scope="row">PlayStation Vita (PS Vita)</th>
+              <td>2011</td>
+            </tr>
+            <tr>
+              <th scope="row">PlayStation 4 (PS4)</th>
+              <td>2013</td>
+            </tr>
+            <tr>
+              <th scope="row">PlayStation 5 (PS5)</th>
+              <td>2020</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
       <section>
         <h2>Games That I Have Played</h2>
-        <p>Here is a list of some of the games that I have played:</p>
+        <h4>Here is a list of some of the games that I have played:</h4>
         <ul>
           <li>Call of Duty(WaW and above)</li>
           <li>Battlefield</li>
@@ -144,7 +193,7 @@ first instance of a button-->
         </ul>
       </section>
       <section>
-        <h2>Games I'm looking forward to playing</h2>
+        <h2>Games I'm Looking Forward To Playing</h2>
         <ol>
           <li>Resident Evil Series</li>
           <li>Dying Light: The Beast</li>
@@ -154,7 +203,15 @@ first instance of a button-->
       <p><a href="#top">Back to top</a></p>
     </main>
     <footer>
-      <p>&copy; 2025 Joshua Gonzalez-Hahn. All rights reserved.</p>
+      <p>
+        &copy; 2025
+        <a
+          href="https://github.com/JoshuaGonzalez-Hahn/JoshuaGonzalezHahnP1"
+          title="link to my github"
+          target="_blank"
+          >Joshua Gonzalez-Hahn</a
+        >. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
