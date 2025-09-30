@@ -1,0 +1,160 @@
+<!--This page uses popover and popovertarget attribute. The popover attribute is a global HTML attribute
+that makes an element behave like a popover — a small, temporary UI box that can be shown or hidden on demand.
+I'm using it in a way for user engagement. They have to click the button to see what is my go-to game. Im using it at 
+first instance of a button-->
+<!DOCTYPE html>
+<html lang="en" class="videogamePage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorite Video Games</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1 id="top">My Favorite Video Games</h1>
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="index.html" title="go back to home page">Home Page</a>
+          </li>
+          <li>
+            <a href="anime.html" title="anime page for my favorite animes"
+              >My Favorite Anime
+            </a>
+          </li>
+          <li>
+            <a
+              href="superheroes.html"
+              title="page about my favorite superheroes"
+              >My Favorite Superhero</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Brief History Of Video Games</h2>
+        <p>
+          The history of video games began in the 1950s and 60s with mainframe
+          computer experiments like Spacewar! and Tennis for Two, leading to the
+          first home console, the Magnavox Odyssey, and the first arcade hit,
+          Pong, in the early 1970s. The industry experienced a "Golden Age" of
+          arcade success in the late 70s and early 80s, followed by a crash in
+          1983. The market revived in 1985 with the Nintendo Entertainment
+          System, ushering in the modern era of consoles, handhelds, and PC
+          gaming, evolving into the massive industry it is today. <br />
+          <a
+            href="https://www.ebsco.com/research-starters/history/history-video-games"
+            title="Link to learn more history"
+            target="_blank"
+            >Learn more</a
+          >
+        </p>
+      </section>
+      <section>
+        <h2>My Favorite Video Game</h2>
+        <p>
+          I have been playing video games for as long as I can remember. Playing
+          video games is one of my favorite activities to do. I like playing
+          action games majority of the time and that spans across different
+          genres of games. What I love about video games is that I can choose
+          between single player or multiplayer games. The fun in gaming comes
+          from playing with my friends and family. With the most fun and
+          enjoyable time comes from playing video games with my girlfriend!
+          <br />
+          <br />
+          <img
+            src="images/ps4marvelspiderman.jpg"
+            alt="spiderman"
+            width="250"
+            height="250"
+            class="flowRight"
+          />
+          As mentioned before, over my lifetime I have played many games. Some
+          have made me go through every emotion possible, while other have made
+          me question why did I even buy this game. Many games hold a special
+          place in my heart and deserve to be my favorite game. However, putting
+          nostalgia to side, my favorite game would have to be Marvel's Spider
+          Man!
+        </p>
+      </section>
+      <section>
+        <h3>What Is My Current Go-To Game?</h3>
+        <button popovertarget="myPopover">Click here to view/hide</button>
+        <div id="myPopover" popover>
+          <img
+            src="images/fortnite.jpg"
+            alt="fortnite"
+            width="300"
+            height="300"
+          />
+        </div>
+      </section>
+      <section>
+        <h2>Where Do I Play</h2>
+        <p>
+          <img
+            src="images/PlaystationLogoClassic.png"
+            alt="playstation"
+            width="280"
+            height="250"
+            class="flowRight"
+          />
+          Now a days there are many places to play games. You can play on a
+          mobile device, console, or PC. Ever since a kid, my family managed
+          from time to time to get the new gaming devices that were out at the
+          time. We have had PlayStation, Xbox, Nintendo Game Boy, Nintendo DS,
+          and the PSP. One has stuck with me over the years and holds a special
+          place in my heart. As you may have guessed by my favorite game, where
+          I choose to play is on PlayStation!
+        </p>
+      </section>
+      <section>
+        <h2>Games That I Have Played</h2>
+        <p>Here is a list of some of the games that I have played:</p>
+        <ul>
+          <li>Call of Duty(WaW and above)</li>
+          <li>Battlefield</li>
+          <li>Rocket League</li>
+          <li>Fortnite</li>
+          <li>Dying Light (All except newest)</li>
+          <li>7 Days To Die</li>
+          <li>Minecraft</li>
+          <li>Rainbow 6 Siege</li>
+          <li>DOOM(All except newest)</li>
+          <li>Marvel Rivals</li>
+          <li>High On Life</li>
+          <li>Marvel's Spider-Man 1 & 2</li>
+          <li>Marvel's Spider-Man: Mile Morales</li>
+          <li>NBA 2K</li>
+          <li>Yakuza Kiwami</li>
+          <li>Ghost Of Tsushima</li>
+          <li>Red Dead Redemption 1 & 2</li>
+          <li>Fallout 4</li>
+          <li>Dead Space</li>
+          <li>Grand Theft Auto</li>
+          <li>Calisto Protocol</li>
+          <li>Elden Ring</li>
+          <li>Dark Soul III</li>
+          <li>God Of War</li>
+          <li>The Last Of Us Part 1 & 2</li>
+          <li>Mortal Kombat</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Games I'm looking forward to playing</h2>
+        <ol>
+          <li>Resident Evil Series</li>
+          <li>Dying Light: The Beast</li>
+          <li>Halloween</li>
+        </ol>
+      </section>
+      <p><a href="#top">Back to top</a></p>
+    </main>
+    <footer>
+      <p>&copy; 2025 Joshua Gonzalez-Hahn. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

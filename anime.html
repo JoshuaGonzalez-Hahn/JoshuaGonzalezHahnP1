@@ -1,0 +1,254 @@
+<!-- This page uses the <tbody> HTML element. It encapsulates a set of table rows (<tr> elements), indicating 
+     that they comprise the body of a table's main data. I'm using it to have a table hold the animes that I have watched 
+     along with the year they came out. <tbody> is found at the first instance of <table>.-->
+
+<!-- Along with tbody im using the scope attribute. Scope helps screen readers understand the relationship 
+     between headers and data. It improves accessibility (ARIA). Im using it to help screen readers understand the 
+     relationships of the table. Screen readers will now announce “Row: Naruto, Year Released: 2002” instead of just reading 
+     cells out of context. Scope is found at the <table> section.  -->
+
+<!-- This page also uses the <summary> element. The <summary> element specifies a summary, caption, or legend for a 
+     <details> element's disclosure box. I'm using it as a way to engage the user. It's reveals my favorite character, 
+     but let's the user have a guess first by reading the description. The use of <summary> can be found after the 
+     h2 tag "Who Is My Favorite Character?".  -->
+<!DOCTYPE html>
+<html lang="en" class="animePage">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Favorite Anime</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="animePage">
+    <header role="banner">
+      <h1 id="top">My Favorite Anime</h1>
+      <nav role="navigation">
+        <ul>
+          <li>
+            <a href="index.html" title="Go back to home page">Home Page</a>
+          </li>
+          <li>
+            <a
+              href="video-games.html"
+              title="video game page for my favorite video games"
+              >My Favorite Video Game
+            </a>
+          </li>
+          <li>
+            <a
+              href="superheroes.html"
+              title="page about my favorite superheroes"
+              >My Favorite Superhero
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <section>
+        <h2>Brief History of Anime</h2>
+        <article>
+          <p>
+            <img
+              src="images/animeHistory.jpg"
+              alt="animeHistory"
+              width="310"
+              height="220"
+              class="flowRight"
+            />
+            Anime began with short films in the early 20th century, with the
+            first widely accepted "real" anime being The Dull Sword (1917) by
+            Junichi Kochi. The industry grew through the use of cel animation
+            and the founding of studios like the Kitayama Movie Factory in the
+            1920s. Osamu Tezuka's work in the 1960s helped establish a
+            distinctive anime style, leading to its spread and evolution into
+            the global phenomenon it is today, with major studio Toei Animation
+            and later Studio Ghibli shaping its modern form. <br />
+            <a
+              href="https://en.wikipedia.org/wiki/History_of_anime"
+              title="link to more history"
+              target="_blank"
+              >Learn More</a
+            >
+          </p>
+        </article>
+      </section>
+      <section>
+        <h2>My Favorite Anime</h2>
+        <p>
+          Overtime I have watched alot of different animes! Some were great,
+          fun, engaging, while others weren't so much. At first, when I was in
+          highschool I wasn't that big of a fan of anime. Although, as a kid I
+          had been unknowingly watching anime. Some of the animes I watched as a
+          kid were Pokemon, Yu-Gi-Oh, and Astro Boy. It wasnt until early
+          college days that I started giving anime a chance. <br />
+          <br />
+          <img
+            src="images/naruto.jpg"
+            alt="naruto"
+            width="340"
+            height="280"
+            class="flowRight"
+          />
+          As mentioned before, I have watched plenty of anime overtime, but
+          there is one anime that holds a special place in my heart. And that
+          anime is Naruto! It was one of the first animes that I watched and I
+          was completely invested. Naruto has so many memorable moments and
+          characters. The moment I started watching I wanted to know what the
+          next episode had instore. Aside from the countless filler episodes,
+          Naruto is full of humor and action. Despite it's moments of silliness
+          there are plenty of heart breaking and jaw dropping scenes. Naruto
+          captures emotion and entertainment all in one package. These are some
+          of the reasons why naruto is my favorite anime of all time!
+        </p>
+      </section>
+      <section>
+        <h2>Who Is My Favorite Character?</h2>
+        <details>
+          <summary>
+            Who is it? <br />
+            Described as a laid-back, intelligent, and powerful Jonin who is a
+            tactical genius known for his relaxed demeanor and sarcastic wit,
+            but who becomes a stern and calm leader in crucial moments.
+          </summary>
+          <br />
+          <img
+            src="images/kakashi.png"
+            alt="kakashi"
+            width="250"
+            height="180"
+            class="flowLeft"
+          />
+          <strong>Kakashi Hatake</strong>
+        </details>
+      </section>
+      <section>
+        <h2>My Watched Animes</h2>
+        <p>
+          Here is a table containing some of the animes I watched and the year
+          they came out
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Anime Name</th>
+              <th scope="col">Year Released</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Naruto</th>
+              <td>2002</td>
+            </tr>
+            <tr>
+              <th scope="row">Chainsaw Man</th>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <th scope="row">Dragon Ball</th>
+              <td>1986</td>
+            </tr>
+            <tr>
+              <th scope="row">Afro Samurai</th>
+              <td>2007</td>
+            </tr>
+            <tr>
+              <th scope="row">Dragon Ball Z</th>
+              <td>1989</td>
+            </tr>
+            <tr>
+              <th scope="row">Vinland Saga</th>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th scope="row">Plunderer</th>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <th scope="row">ZOM 100</th>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Mob Psycho 100</th>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">MEGALOBOX</th>
+              <td>2018</td>
+            </tr>
+            <tr>
+              <th scope="row">JUJUTSU KAISEN</th>
+              <td>2020</td>
+            </tr>
+            <tr>
+              <th scope="row">Attack on Titan</th>
+              <td>2014</td>
+            </tr>
+            <tr>
+              <th scope="row">Yu-Gi-Oh</th>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <th scope="row">Dragon Ball Super</th>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <th scope="row">Hell's Paradise</th>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Assassination Classroom</th>
+              <td>2015</td>
+            </tr>
+            <tr>
+              <th scope="row">Shangri-La Frontier</th>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Solo Leveling</th>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <th scope="row">Demon Slayer</th>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <th scope="row">My Hero ACADEMIA</th>
+              <td>2016</td>
+            </tr>
+            <tr>
+              <th scope="row">MASHLE:MAGIC AND MUSCLES</th>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <th scope="row">Kaiju No.8</th>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <th scope="row">Black Clover</th>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <th scope="row">DAN DA DAN</th>
+              <td>2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <p>
+        Most of these animes can be watched on
+        <a
+          href="https://www.crunchyroll.com/"
+          title="link to crunchyroll page"
+          target="_blank"
+          >Crunchyroll</a
+        >
+        !
+      </p>
+      <p><a href="#top">Back to top</a></p>
+    </main>
+    <footer>
+      <p>&copy; 2025 Joshua Gonzalez-Hahn. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
